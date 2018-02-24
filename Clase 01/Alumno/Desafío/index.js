@@ -1,4 +1,4 @@
-/*-------------------------Desafío resueltos clase01---------------------*/
+/*-------------------------DESAFIO RESUELTO CLASE 01------------------------*/
 var peso = parseInt(prompt('Ingrese su edad'))
 var age = parseInt(prompt('Ingrese su peso'))
 var resulSuma = age + peso
