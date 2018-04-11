@@ -35,7 +35,7 @@ function sum (number1, number2) {
 }
 
 function res (number1, number2) {
-  return number1 - umber2
+  return number1 - number2
 }
 
 function mul (number1, number2) {
