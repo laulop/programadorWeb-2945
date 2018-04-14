@@ -2,8 +2,9 @@
 /test-app
 .DS_Store
 /**/.DS_Store
-/Clase 12/Profe/Desafío
-/Clase 12/Profe/Ejercicio
-/node_modules
+
+/**/node_modules
+/**/bower_components
 /package-lock.jsonç
 /Teoria plataforma
+/Workshop Final
