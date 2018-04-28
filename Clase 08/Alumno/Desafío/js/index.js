@@ -108,7 +108,6 @@ function createStudentLi(firstName, lastName, dni, examResults) {
 
 showStudents(students)
 
-// Función que busca por text y devuelve la posición del elemento en el Array, si no lo encuentra devuelve -1
 
 function searchIndexByText(text, studentsList) {
   var index = -1
@@ -129,7 +128,6 @@ function searchIndexByText(text, studentsList) {
   return index
 }
 
-// Función que busca el alumno y lo elimina en el DOM
 
 function deleteStudentNode(text, studentsList) {
   var index = searchIndexByText(text, studentsList)
@@ -139,5 +137,3 @@ function deleteStudentNode(text, studentsList) {
     listContainer.removeChild(studentNode)
   }
 }
-
-// deleteStudentNode('MatIA', students)
