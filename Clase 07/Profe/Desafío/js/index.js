@@ -10,7 +10,7 @@ deleteStudent('geronimo')
 
 // Función que elimina el elemento del localStorage si lo encuentra
 
-function deleteStudent (text) {
+function deleteStudent(text) {
   var studentsList = localStorage.getItem('studentsList')
 
   var parsedList = studentsList ? JSON.parse(studentsList) : []
@@ -28,7 +28,7 @@ function deleteStudent (text) {
 
 // Función que busca por nombre y devuelve la posición del elemento en el array
 
-function searchIndexByText (text, studentsList) {
+function searchIndexByText(text, studentsList) {
   var index = -1
 
   for (var i = 0; i < studentsList.length; i++) {

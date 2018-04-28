@@ -12,7 +12,7 @@ deleteStudentButton.disabled = true
 
 // Función que inicia la lista en pantalla y carga una si existe en el localStorage
 
-function init () {
+function init() {
   var mainList = document.getElementById('mainList')
   var studentsList = getLocalStorageList()
 
@@ -26,7 +26,7 @@ init()
 
 // Función que crea un nodo list-item a partir de un objeto estudiante
 
-function createStudentNodeSimple (student) {
+function createStudentNodeSimple(student) {
   var li = document.createElement('li')
 
   li.innerHTML =
@@ -41,7 +41,7 @@ function createStudentNodeSimple (student) {
 
 // Función que valida si tengo que habilitar el botón de agregar estudiante, solo habilita si estñan todos los campos validados
 
-function validateButtonSimple () {
+function validateButtonSimple() {
   var validFields = document.getElementsByClassName('is-valid')
   if (validFields.length === 2) {
     addStudentButton.disabled = false
@@ -157,7 +157,7 @@ deleteStudentButton.onclick = function () {
 
 // Función que busca por dni y devuelve la posición del elemento en el Array, si no lo encuentra devuelve -1
 
-function searchIndexByDni (dni) {
+function searchIndexByDni(dni) {
   var index = -1
   var studentsList = getLocalStorageList()
 
@@ -174,7 +174,7 @@ function searchIndexByDni (dni) {
 
 // Función que me devuelve la lista del localStorage como un Array de JavaScript
 
-function getLocalStorageList () {
+function getLocalStorageList() {
   var studentsList = localStorage.getItem('studentsList')
 
   var parsedList = studentsList ? JSON.parse(studentsList) : []
@@ -184,7 +184,7 @@ function getLocalStorageList () {
 
 // Función que pisa la lista del localStorage
 
-function setLocalStorageList (studentsList) {
+function setLocalStorageList(studentsList) {
   var stringList = JSON.stringify(studentsList)
 
   localStorage.setItem('studentsList', stringList)
@@ -192,7 +192,7 @@ function setLocalStorageList (studentsList) {
 
 // Función que agrega un estudiante, tanto al localStorage como al DOM
 
-function addStudentSimple (firstName, dni) {
+function addStudentSimple(firstName, dni) {
   var mainList = document.getElementById('mainList')
 
   var newStudent = {
